@@ -9,7 +9,7 @@
             Content = "You can't believe you sleep in these things. Surely it's " +
                         "time somebody changed them. The pleasures of prison life " +
                         "I guess!\n\n";
-            SetOptionsDictionary(Options);
+            //SetOptionsDictionary(Options);
 
         }
 

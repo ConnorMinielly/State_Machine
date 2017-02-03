@@ -9,7 +9,7 @@
             Content = "This is one of those button locks. You have no idea what the " +
                         "combination is. You wish you could somehow see where the dirty " +
                         "fingerprints were, maybe that would help.\n\n";
-            SetOptionsDictionary(Options);
+            //SetOptionsDictionary(Options);
 
         }
 

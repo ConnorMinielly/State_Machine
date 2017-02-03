@@ -7,7 +7,7 @@ namespace Assets
     {  
         protected State NextState;
 
-        protected Dictionary<int, string> OptionsDictionary = new Dictionary<int, string>();
+        //protected Dictionary<int, string> OptionsDictionary = new Dictionary<int, string>();
         protected string[] Options { get; set; }
         protected string Content { get; set; }
 
@@ -33,14 +33,14 @@ namespace Assets
         public string GetStateContent()
         {
             string str = Content;
-            foreach (var s in OptionsDictionary.Values)
+            foreach (var s in Options)
             {
                 str += s;
             }
             return str;
         }
 
-        public void SetOptionsDictionary(string[] keys)
+        /*public void SetOptionsDictionary(string[] keys)
         {
             int i = 1;
             foreach (var s in keys)
@@ -48,7 +48,7 @@ namespace Assets
                 OptionsDictionary.Add(i, s);
                 i++;
             }
-        }
+        }*/
 
         public int GetOptionCount()
         {
