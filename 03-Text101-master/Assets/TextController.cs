@@ -8,14 +8,12 @@ namespace Assets
 
         public Text GameText;
         Context gameContext; 
-
-        // Use this for initialization
+        
         void Start()
         {
            gameContext = new Context(new Cell_State());
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
             gameContext.UpdateContext(GameText);

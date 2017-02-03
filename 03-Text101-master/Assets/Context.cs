@@ -42,7 +42,7 @@ namespace Assets
                 currentStateStack.Push(CurrentState.HandleSelection(5));
                 CurrentState = currentStateStack.Peek();
             }
-            if (Input.GetKeyDown(KeyCode.Backspace) )
+            if (Input.GetKeyDown(KeyCode.Backspace) && currentStateStack.Count > 1)
             {
                 currentStateStack.Pop().ReturnToLastState(0);
                 CurrentState = currentStateStack.Peek();

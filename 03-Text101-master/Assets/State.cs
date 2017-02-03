@@ -6,14 +6,12 @@ namespace Assets
     public abstract class State
     {  
         protected State NextState;
-
-        //protected Dictionary<int, string> OptionsDictionary = new Dictionary<int, string>();
         protected string[] Options { get; set; }
         protected string Content { get; set; }
 
         public virtual State HandleSelection(int option)
         {
-            
+            //DoTransition(option);
             return GetNextState(option);
         }
 
@@ -39,16 +37,6 @@ namespace Assets
             }
             return str;
         }
-
-        /*public void SetOptionsDictionary(string[] keys)
-        {
-            int i = 1;
-            foreach (var s in keys)
-            {
-                OptionsDictionary.Add(i, s);
-                i++;
-            }
-        }*/
 
         public int GetOptionCount()
         {

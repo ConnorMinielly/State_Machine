@@ -9,7 +9,6 @@
             Content = "You are in a prison cell, and you want to escape. There are " +
                    "some dirty sheets on the bed, a mirror on the wall, and the door " +
                    "is locked from the outside.\n\n";
-            //SetOptionsDictionary(Options);
         }
 
         public override void DoTransition(int option)

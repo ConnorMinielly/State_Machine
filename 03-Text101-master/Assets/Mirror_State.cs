@@ -7,7 +7,6 @@
         {
             Options = new string[] { "Press 1 to take mirror\n", "Press Backspace to return to cell.\n" };            
             Content = "The dirty old mirror on the wall seems loose.\n\n";
-            //SetOptionsDictionary(Options);
         }
 
         public override void DoTransition(int option)
