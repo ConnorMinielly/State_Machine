@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace StateMachine
+namespace Assets
 {
     public abstract class State
     {  
@@ -15,7 +13,7 @@ namespace StateMachine
 
         public virtual State HandleSelection(int option)
         {
-            //DoTransition(option);
+            
             return GetNextState(option);
         }
 
@@ -52,9 +50,9 @@ namespace StateMachine
             }
         }
 
-        public string GetOption(int selection)
+        public int GetOptionCount()
         {
-            return OptionsDictionary[selection];
+            return Options.Length;
         }
 
     }

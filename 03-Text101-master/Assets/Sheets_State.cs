@@ -1,8 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace StateMachine
+﻿namespace Assets
 {
     public class Sheets_State : State
     {
@@ -26,7 +22,7 @@ namespace StateMachine
         {
             switch (option)
             {
-                case 4:
+                case 0:
                     return new Cell_State();
                 default:
                     return this;

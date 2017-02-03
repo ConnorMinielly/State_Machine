@@ -1,8 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-using UnityEngine;
-using UnityEngine.UI;
-
-namespace StateMachine
+﻿namespace Assets
 {
     public class Cell_State : State
     {
@@ -22,7 +18,7 @@ namespace StateMachine
         }
 
         public override State GetNextState(int option)
-        {
+        { 
             switch (option)
             {
                 case 1: 
@@ -31,7 +27,7 @@ namespace StateMachine
                     return new Mirror_State();
                 case 3:
                     return new Lock_State();
-                case 4:
+                case 0:
                     return new Cell_State();
                 default:
                     return this;
