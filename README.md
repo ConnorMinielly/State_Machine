@@ -1,2 +1,2 @@
 # StateMachine:
-A practice implementation of State design pattern for a Unity engine text adventure.
+I know this was awhile ago, but this repo sucks lmao
